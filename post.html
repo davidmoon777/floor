@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>글 상세</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header><a href="index.html" style="opacity:0.5;color:#ccc;text-decoration:none;">← 목록</a></header>
+
+<div id="postContainer">
+  <h2 id="postTitle"></h2>
+  <div id="postContent"></div>
+  <div id="postNick" style="opacity:0.6;font-size:11px;"></div>
+</div>
+
+<div id="comments"></div>
+
+<textarea id="commentContent" placeholder="댓글 작성"></textarea>
+<button id="commentBtn">댓글 올리기</button>
+
+<script type="module" src="postScript.js"></script>
+</body>
+</html>
