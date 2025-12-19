@@ -1,0 +1,11 @@
+body { margin:0; background:#0f0f0f; color:#e0e0e0; font-family:sans-serif; }
+header { padding:8px 12px; font-size:12px; opacity:0.5; }
+#posts { padding:10px; }
+.post { border-bottom:1px solid #1e1e1e; padding:8px 0; }
+.nick { font-size:11px; opacity:0.6; }
+.content { font-size:14px; margin-top:4px; white-space:pre-wrap; }
+.comment { margin-left:10px; font-size:12px; opacity:0.7; }
+#writeBtn { position:fixed; right:16px; bottom:16px; background:#222; color:#ccc; border:none; border-radius:50%; width:40px; height:40px; font-size:20px; cursor:pointer; }
+#writer { position:fixed; inset:0; background:rgba(0,0,0,0.9); display:none; flex-direction:column; padding:20px; }
+textarea { flex:1; background:#111; color:#eee; border:none; resize:none; font-size:14px; padding:10px; margin-bottom:10px; }
+button { padding:10px; background:#222; color:#ccc; border:none; margin-top:5px; cursor:pointer; }
