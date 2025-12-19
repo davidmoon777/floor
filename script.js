@@ -13,6 +13,7 @@ const db = getFirestore(app);
 const postsRef = collection(db, "floors/floor1/posts");
 const q = query(postsRef, orderBy("lastActivityAt", "desc"), limit(200));
 
+// 게시글 목록 실시간 불러오기
 onSnapshot(q, snapshot => {
   const container = document.getElementById("posts");
   container.innerHTML = "";
@@ -27,8 +28,7 @@ onSnapshot(q, snapshot => {
 });
 
 // 글 작성
-const submitBtn = document.getElementById("submitBtn");
-submitBtn.onclick = async () => {
+document.getElementById("submitBtn").onclick = async () => {
   const title = document.getElementById("title").value.trim();
   const content = document.getElementById("content").value.trim();
   if (!title && !content) return;
@@ -47,8 +47,7 @@ submitBtn.onclick = async () => {
   closeWriter();
 };
 
-const writeBtn = document.getElementById("writeBtn");
-writeBtn.onclick = () => { document.getElementById("writer").style.display="flex"; };
-const closeBtn = document.getElementById("closeBtn");
-closeBtn.onclick = () => { document.getElementById("writer").style.display="none"; };
+// 글쓰기 창 열기/닫기
+document.getElementById("writeBtn").onclick = () => { document.getElementById("writer").style.display="flex"; };
+document.getElementById("closeBtn").onclick = () => { document.getElementById("writer").style.display="none"; };
 function closeWriter() { document.getElementById("writer").style.display="none"; }
