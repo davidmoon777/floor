@@ -1,10 +1,16 @@
 const SERVER = "http://localhost:3000";
 
+// HTML 요소 선택
+const writer = document.getElementById("writer");
+const titleInput = document.getElementById("titleInput");
+const contentInput = document.getElementById("contentInput");
+const writeBtn = document.getElementById("writeBtn");
+
 // 화면 전환: 환영 → 게시판
 function enterFloor() {
   document.getElementById("welcome").classList.add("hidden");
   document.getElementById("postList").classList.remove("hidden");
-  document.getElementById("writeBtn").classList.remove("hidden");
+  writeBtn.classList.remove("hidden");
   loadPosts();
 }
 
