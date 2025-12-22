@@ -1,5 +1,14 @@
 const SERVER = "http://localhost:3000";
 
+// 화면 전환: 환영 → 게시판
+function enterFloor() {
+  document.getElementById("welcome").classList.add("hidden");
+  document.getElementById("postList").classList.remove("hidden");
+  document.getElementById("writeBtn").classList.remove("hidden");
+  loadPosts();
+}
+
+// 게시글 목록 로딩
 async function loadPosts() {
   const res = await fetch(`${SERVER}/posts`);
   const posts = await res.json();
@@ -18,6 +27,7 @@ async function loadPosts() {
   });
 }
 
+// 글쓰기
 async function submitPost() {
   const title = titleInput.value.trim();
   const content = contentInput.value.trim();
@@ -33,11 +43,10 @@ async function submitPost() {
   loadPosts();
 }
 
+// 글쓰기 모달 열기/닫기
 function openWriter() {
   writer.classList.remove("hidden");
 }
 function closeWriter() {
   writer.classList.add("hidden");
 }
-
-loadPosts();
