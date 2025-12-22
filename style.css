@@ -1,22 +1,94 @@
-body { margin: 0; font-family: system-ui, sans-serif; background: #fafafa; }
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #fafafa;
+}
 
-.container { padding: 16px; text-align: center; }
+.container {
+  padding: 16px;
+  text-align: center;
+}
 
-.enter-btn { padding: 12px 24px; font-size: 18px; border: none; background-color: #4a90e2; color: white; border-radius: 8px; cursor: pointer; }
+.enter-btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-.post { padding: 12px 0; border-bottom: 1px solid #ddd; cursor: pointer; text-align: left; }
+.post {
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  text-align: left;
+}
 
-#writeBtn { position: fixed; right: 20px; bottom: 20px; width: 52px; height: 52px; border-radius: 50%; font-size: 24px; background-color: #4a90e2; color: white; border: none; cursor: pointer; }
+#writeBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  font-size: 24px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
-.hidden { display: none; }
+.hidden {
+  display: none !important;
+}
 
-#writer { position: fixed; inset: 0; background: rgba(0,0,0,.5); display: flex; align-items: center; justify-content: center; }
+#writer {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.writer-box { background: white; padding: 16px; width: 90%; max-width: 400px; border-radius: 8px; }
+.writer-box {
+  background: white;
+  padding: 16px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+}
 
-.writer-box input, .writer-box textarea { width: 100%; margin-bottom: 8px; font-size: 16px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+.writer-box input, .writer-box textarea {
+  width: 100%;
+  margin-bottom: 8px;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
-.writer-actions { display: flex; justify-content: flex-end; gap: 8px; }
+.writer-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
 
-.writer-actions button:first-child { background-color: #4a90e2; color: white; padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; }
-.writer-actions button.cancel { background-color: #ccc; padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; }
+.writer-actions button:first-child {
+  background-color: #4a90e2;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.writer-actions button:last-child {
+  background-color: #ccc;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
