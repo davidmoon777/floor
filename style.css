@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #fafafa;
+}
+
+.header {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  padding: 16px;
+}
+
+.post {
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+#writeBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.hidden {
+  display: none;
+}
+
+#writer {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.writer-box {
+  background: white;
+  padding: 16px;
+  width: 90%;
+  max-width: 400px;
+}
+
+textarea, input {
+  width: 100%;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
