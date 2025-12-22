@@ -4,63 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>층계 1층</title>
-
-  <!-- 스타일 -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- 상단 헤더 -->
-  <header class="header">
-    <h1>층계 1층</h1>
-    <p class="subtitle">가볍게 남기고, 가볍게 떠나는 곳</p>
-  </header>
+<header class="header">
+  <h1>층계 1층</h1>
+  <p>가볍게 남기고, 가볍게 떠나는 곳</p>
+</header>
 
+<main id="postList" class="container">
   <!-- 게시글 목록 -->
-  <main class="container">
-    <div id="postList">
-      <!-- JS로 게시글 삽입 -->
-      <!-- 예시
-      <div class="post" onclick="openPost('postId')">
-        <h3>글 제목</h3>
-        <span>익명 · 2시간 전</span>
-      </div>
-      -->
-    </div>
-  </main>
+</main>
 
-  <!-- 글쓰기 버튼 (플로팅) -->
-  <button id="writeBtn" onclick="openWriter()">＋</button>
+<button id="writeBtn" onclick="openWriter()">＋</button>
 
-  <!-- 글쓰기 모달 -->
-  <div id="writer" class="hidden">
-    <div class="writer-box">
-      <h2>글 쓰기</h2>
-
-      <input
-        type="text"
-        id="titleInput"
-        placeholder="제목"
-        maxlength="50"
-      >
-
-      <textarea
-        id="contentInput"
-        placeholder="내용"
-        rows="6"
-        maxlength="1000"
-      ></textarea>
-
-      <div class="writer-actions">
-        <button onclick="submitPost()">올리기</button>
-        <button class="cancel" onclick="closeWriter()">취소</button>
-      </div>
-    </div>
+<div id="writer" class="hidden">
+  <div class="writer-box">
+    <input id="titleInput" placeholder="제목">
+    <textarea id="contentInput" placeholder="내용"></textarea>
+    <button onclick="submitPost()">올리기</button>
+    <button onclick="closeWriter()">취소</button>
   </div>
+</div>
 
-  <!-- 스크립트 -->
-  <script src="script.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
