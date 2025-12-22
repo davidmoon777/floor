@@ -9,22 +9,22 @@
 
 <body>
 
-<!-- 초기 환영 화면 -->
-<div id="welcome" class="container welcome-screen">
+<!-- 메인 화면 -->
+<div id="mainScreen" class="container">
   <h1>층계 1층</h1>
-  <p>슬기로운양지생활</p>
+  <p>가볍게 남기고, 가볍게 떠나는 곳</p>
   <button class="enter-btn" onclick="enterFloor()">1층 입장하기</button>
 </div>
 
-<!-- 게시글 목록 화면 -->
+<!-- 게시판 화면: 처음에는 숨김 -->
 <main id="postList" class="container hidden">
   <!-- JS에서 게시글 삽입 -->
 </main>
 
-<!-- 글쓰기 버튼 -->
+<!-- 글쓰기 버튼 숨김 -->
 <button id="writeBtn" class="hidden" onclick="openWriter()">＋</button>
 
-<!-- 글쓰기 모달 -->
+<!-- 글쓰기 모달 숨김 -->
 <div id="writer" class="hidden">
   <div class="writer-box">
     <input id="titleInput" placeholder="제목">
