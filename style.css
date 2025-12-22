@@ -4,13 +4,23 @@ body {
   background: #fafafa;
 }
 
-.header {
-  padding: 16px;
-  border-bottom: 1px solid #ddd;
-}
-
 .container {
   padding: 16px;
+}
+
+.welcome-screen {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.enter-btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .post {
@@ -27,6 +37,10 @@ body {
   height: 52px;
   border-radius: 50%;
   font-size: 24px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .hidden {
@@ -47,10 +61,38 @@ body {
   padding: 16px;
   width: 90%;
   max-width: 400px;
+  border-radius: 8px;
 }
 
-textarea, input {
+.writer-box input,
+.writer-box textarea {
   width: 100%;
   margin-bottom: 8px;
   font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.writer-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.writer-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.writer-actions button:first-child {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.writer-actions button.cancel {
+  background-color: #ccc;
 }
