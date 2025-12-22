@@ -9,23 +9,30 @@
 
 <body>
 
-<header class="header">
+<!-- 초기 환영 화면 -->
+<div id="welcome" class="container welcome-screen">
   <h1>층계 1층</h1>
-  <p>가볍게 남기고, 가볍게 떠나는 곳</p>
-</header>
+  <p>슬기로운양지생활</p>
+  <button class="enter-btn" onclick="enterFloor()">1층 입장하기</button>
+</div>
 
-<main id="postList" class="container">
-  <!-- 게시글 목록 -->
+<!-- 게시글 목록 화면 -->
+<main id="postList" class="container hidden">
+  <!-- JS에서 게시글 삽입 -->
 </main>
 
-<button id="writeBtn" onclick="openWriter()">＋</button>
+<!-- 글쓰기 버튼 -->
+<button id="writeBtn" class="hidden" onclick="openWriter()">＋</button>
 
+<!-- 글쓰기 모달 -->
 <div id="writer" class="hidden">
   <div class="writer-box">
     <input id="titleInput" placeholder="제목">
     <textarea id="contentInput" placeholder="내용"></textarea>
-    <button onclick="submitPost()">올리기</button>
-    <button onclick="closeWriter()">취소</button>
+    <div class="writer-actions">
+      <button onclick="submitPost()">올리기</button>
+      <button onclick="closeWriter()">취소</button>
+    </div>
   </div>
 </div>
 
