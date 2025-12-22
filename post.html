@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>게시글 상세</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시글</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header><a href="index.html" style="opacity:0.5;color:#ccc;text-decoration:none;">← 목록</a></header>
+<button onclick="history.back()">← 목록</button>
 
-<div id="postContainer">
-  <h2 id="postTitle"></h2>
-  <div id="postContent"></div>
-  <div id="postNick" style="opacity:0.6;font-size:11px;"></div>
-</div>
+<h2 id="postTitle"></h2>
+<p id="postContent"></p>
+
+<hr>
 
 <div id="comments"></div>
 
-<textarea id="commentContent" placeholder="댓글 작성"></textarea>
-<button id="commentBtn">댓글 올리기</button>
+<textarea id="commentInput" placeholder="댓글"></textarea>
+<button onclick="addComment()">댓글 올리기</button>
 
-<script type="module" src="postScript.js"></script>
+<script src="postScript.js"></script>
 </body>
 </html>
